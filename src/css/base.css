@@ -7,6 +7,10 @@ root: {
   --white: #FFFFFF;
 }
 
+body {
+    background-color: var(--white);
+}
+
 .container {
   padding: 0 60px;
 }
