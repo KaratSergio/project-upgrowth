@@ -1,1 +1,1 @@
-import url'./js/menu';
+import './js/menu';
