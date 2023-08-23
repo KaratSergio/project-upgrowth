@@ -1,0 +1,12 @@
+root: {
+  --dark-blue: #0a224a;
+  --dark-gray: #7a7a7a;
+  --gray: #B6B6B6;
+  --light-gray: #D9D9D9;
+  --accent-gray: #F7FAFF;
+  --white: #FFFFFF;
+}
+
+.container {
+  padding: 0 60px;
+}
