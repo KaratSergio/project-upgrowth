@@ -70,16 +70,16 @@
       }
       .our-products-item:not(:nth-child(-n+1)) {
         display: block;
-    }
-      .our-products-item:not(:nth-child(-n+2)) {
-        display: none;
-      }
-      .our-products-img {
-        margin-bottom: 15px;
-      }
-      .our-products-name {
-        font-size: 18px;
-      }
+  }
+  .our-products-item:not(:nth-child(-n+2)) {
+  display: none;
+  }
+  .our-products-img {
+   margin-bottom: 15px;
+  }
+  .our-products-name {
+  font-size: 18px;
+  }
   }
 @media screen and (min-width: 1440px)  {
   .our-products-container {
