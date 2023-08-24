@@ -1,3 +1,21 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .our-products {
     padding-top: 64px;
     padding-bottom: 64px;
@@ -23,11 +41,10 @@
   }
   .our-products-item {
     width: 100%;
-    position: relative;
-    /* display: inline-flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
-    width: calc((100% - 3 * 24px) / 4); */
+    /* width: calc((100% - 3 * 24px) / 4); */ 
   }
 
   .our-products-item:not(:nth-child(-n+1)) {
@@ -55,101 +72,45 @@
   @media screen and (min-width: 768px) {
     .our-products-container {
       max-width: 768px;
-      outline: 2px solid red;
     }   
     .our-products {
         padding-top: 100px;
         padding-bottom: 100px;
       }
       .our-products-title {
-        color: #0A224A;
-        font-family: Roboto;
         font-size: 32px;
-        font-style: normal;
-        font-weight: 400;
         line-height: 1.41; 
-        text-transform: uppercase;
-        text-align: center;
         margin-bottom: 30px;
-        margin-right: auto;
-        margin-left: auto;
-      }
-      .our-products-list {
-        display: flex;
-        display: wrap;
-        gap: 16px;
       }
       .our-products-item {
         width: 100%;
-        display: inline-flex;
-        flex-direction: column;
-        align-items: flex-start;
         width: calc((100% - 16px) / 2);
       }
       .our-products-item:not(:nth-child(-n+1)) {
-        display: flex;
+        display: block;
     }
       .our-products-item:not(:nth-child(-n+2)) {
         display: none;
       }
       .our-products-img {
-        margin: 0 auto;
-        margin-bottom: 16px;
+        margin-bottom: 15px;
       }
       .our-products-name {
-        color: #0A224A;
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
+        font-size: 18px;
       }
   }
 @media screen and (min-width: 1440px)  {
   .our-products-container {
     max-width: 1350px;
-    outline: 2px solid red;
-  }
-  .our-products {
-    padding-bottom: 100px;
-    display: flex;
-  }
-  .our-products-title {
-    color: #0A224A;
-    font-family: Roboto;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.4; 
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-right: auto;
-    margin-left: auto;
   }
   .our-products-list {
-    display: flex;
     gap: 24px;
   }
   .our-products-item {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
     width: calc((100% - 3 * 24px) / 4);
   }
   .our-products-item:not(:nth-child(-n+2)) {
-    display: flex;
-  }
-  .our-products-img {
-    margin-bottom: 15px;
-  }
-  .our-products-name {
-    color: #0A224A;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
+    display: block;
   }
 }
 
