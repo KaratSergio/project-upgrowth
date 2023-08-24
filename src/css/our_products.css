@@ -1,0 +1,104 @@
+.our-products {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .our-products-title {
+    color: var(--dark-blue);
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; 
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 33px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .our-products-list {
+    display: flex;
+    display: wrap; 
+    gap: 16px;
+  }
+  .our-products-item {
+    width: 100%;
+    /* width: calc((100% - 3 * 24px) / 4); */ 
+  }
+
+  .our-products-item:not(:nth-child(-n+1)) {
+    display: none;
+  }
+  .our-products-img {
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+  .our-products-name {
+    color: var(--dark-blue);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    justify-content: left;
+  }
+
+  @media screen and (min-width: 375px) {
+    .our-products > .container {
+      max-width: 375px;
+      outline: 2px solid red;
+    }
+  }
+  @media screen and (min-width: 768px) {
+  .our-products > .container {
+    max-width: 736px;
+  }   
+  .our-products {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .our-products-title {
+    font-size: 32px;
+    line-height: 1.41; 
+    margin-bottom: 30px;
+  }
+  .our-products-item {
+    width: calc((100% - 16px) / 2);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  .our-products-item:not(:nth-child(-n+1)) {
+    display: block;
+  }
+  .our-products-item:not(:nth-child(-n+2)) {
+  display: none;
+  }
+  .our-products-img {
+   margin-bottom: 15px;
+  }
+  .our-products-name {
+  font-size: 18px;
+  }
+  }
+@media screen and (min-width: 1440px)  {
+  .our-products > .container {
+    max-width: 1352px;
+  }
+  .our-products-list {
+    gap: 24px;
+  }
+  .our-products-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+  .our-products-item:not(:nth-child(-n+2)) {
+    display: block;
+  }
+}
+
+
+
+
+
+
