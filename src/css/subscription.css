@@ -1,3 +1,5 @@
 .subscription{
     background-color: rgb(11, 76, 132);
+    display: flex;
+    justify-content: center;
 }
