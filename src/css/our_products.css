@@ -1,27 +1,9 @@
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul,
-ol {
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .our-products {
     padding-top: 64px;
     padding-bottom: 64px;
   }
   .our-products-title {
-    color: #0A224A;
+    color: var(--dark-blue);
     font-family: Roboto;
     font-size: 28px;
     font-style: normal;
@@ -55,7 +37,7 @@ ol {
     margin-bottom: 16px;
   }
   .our-products-name {
-    color: #0A224A;
+    color: var(--dark-blue);
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
