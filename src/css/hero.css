@@ -115,11 +115,11 @@
 
     .hero-text {
         margin-left: auto;
-        margin-right: 9px;
+        margin-right: 0;
     }
 
     .hero-anchor-link {
         margin-left: auto;
-        margin-right: 97px;
+        margin-right: 88px;
     }
 }
