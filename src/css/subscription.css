@@ -3,10 +3,10 @@
     padding: 88px 172px 86px 230px;
 }
 .sub-name-title{
-
+color:var(--dark-blue);
 font-size: 32px;
 font-style: normal;
 font-weight: 400;
-line-height: 45px; /* 140.625% */
+line-height: 1.4em;
 text-transform: uppercase;
 }
