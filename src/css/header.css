@@ -108,10 +108,10 @@
 @media screen and (min-width: 1440px) {
 
   .button-menu-toggle {
-    display: flex;
+    display: none;
   }
     .header-mob-menu-list {
-      display: none;
+      display: flex;
     }
 
   .header-mob-manu-link {
