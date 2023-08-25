@@ -95,28 +95,6 @@
   color: var(--white);
 }
 
-@media screen and (min-width:375px) {
-  .container {
-    max-width: 343px;
-    margin: 0 auto;
-  }
-}
-
-
-@media screen and (min-width:768px) {
-  .container {
-    max-width: 736px;
-    margin: 0 auto;
-  }
-
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1408px;
-    margin: 0 auto;
-  }
-
   .button-menu-toggle {
     display: none;
   }
