@@ -15,7 +15,7 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  flex-direction: row;
+  /* flex-direction: row; */
 }
 
 .bestsellers-item-one {
@@ -90,14 +90,14 @@
     flex-wrap: nowrap;
     gap: 0px;
     display: flex;
-    flex-direction: none column;
+  
+    /* flex-direction: none column; */
   }
   .bestsellers-container-one {
     /* width: 536px; */
     margin-right: 24px;
     margin-bottom: 0px;
   }
-  
   .bestsellers-list-two {
     gap: 30px 20px;
   }
