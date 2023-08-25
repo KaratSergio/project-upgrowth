@@ -56,7 +56,6 @@
         background-size: 308px 329px, 364px 531px;
         background-repeat: no-repeat;
         background-position: top 202px left 32px, top 0px left 372px;
-        max-width: 768px;
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -98,7 +97,6 @@
         background-size: 310px 329px, 648px 530px, 312px, 337px;
         background-repeat: no-repeat;
         background-position: top 202px left 60px, top 0px left 395px, top 0px right 60px;
-        max-width: 1440px;
     }
 
     @media (min-device-pixel-ratio: 2),
