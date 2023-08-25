@@ -89,6 +89,6 @@ padding: 17px 65px;
 justify-content: center;
 align-items: center;
 gap: 6px;
-color: var(--dark-blue);
+background-color: var(--dark-blue);
 
 }
