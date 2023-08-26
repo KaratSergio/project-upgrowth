@@ -6,10 +6,14 @@
   background-color: var(--dark-blue);
 }
 
+address {
+  font-style: normal;
+}
+
 .footer-svg {
   display: flex;
   align-items: center;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 }
 
 .footer-list-svg {
@@ -69,16 +73,15 @@
 
 .footer-privacy {
   opacity: 0.6;
-color: var(--white);
+  color: var(--white);
   text-align: center;
-  font-family: Roboto;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 14px;
-  /* 116.667% */
-  letter-spacing: 1.188px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 }
+
 
 .footer-hours {
   color: var(--white);
@@ -103,8 +106,9 @@ color: var(--white);
 .footer-contacts-number {
   margin-bottom: 64px;
 }
-.footer-number-item-link{
-padding-top: 8px;
+
+.footer-number-item-link {
+  padding-top: 8px;
 }
 
 @media screen and (min-width:768px) {
@@ -114,19 +118,35 @@ padding-top: 8px;
     margin: 0 auto;
     position: relative;
   }
-    .footer-menu-link{
-      font-size: 16px;
-    }
+
+  .footer-menu-link {
+    font-size: 16px;
+  }
+
+  .footer-adress-link {
+    font-size: 19px;
+  }
+
+  .footer-hours {
+    font-size: 19px;
+  }
+
+  .footer-contacts-link {
+    font-size: 19px;
+  }
+
+  .footer-privacy {
+    font-size: 16px;
+  }
+
+  .footer-privacy-polisy {
+    font-size: 16px;
+  }
 
   .footer-logo-icon {
     width: 127px;
     height: 16;
   }
-
-  .footer-svg {
-    margin-bottom: 20px;
-  }
-
 
   .footer-social-svg {
     width: 40px;
@@ -149,7 +169,7 @@ padding-top: 8px;
     margin-bottom: 0;
   }
 
-  /* ----------------- ADRESS------------------ */
+
   .footer-adress {
     margin-bottom: 64px;
   }
@@ -159,7 +179,6 @@ padding-top: 8px;
   }
 
 
-  /* ------------------number -------------- */
 
   .hiddan-mail {
     display: flex;
@@ -194,16 +213,31 @@ padding-top: 8px;
     max-width: 1376px;
     margin: 0 auto;
     position: relative;
-
   }
 
-  /* ------------------LOGO-AND-SOCIAL ICON---------------- */
-  .footer-svg {
-    margin-bottom: 39px;
+  .footer-menu-link {
+    font-size: 18px;
   }
 
+  .footer-adress-link {
+    font-size: 19px;
+  }
 
-  /* ------------------FOOTER MENU---------------- */
+  .footer-hours {
+    font-size: 19px;
+  }
+
+  .footer-contacts-link {
+    font-size: 19px;
+  }
+
+  .footer-privacy {
+    font-size: 16px;
+  }
+
+  .footer-privacy-polisy {
+    font-size: 16px;
+  }
 
   .footer-menu {
     position: absolute;
@@ -217,17 +251,19 @@ padding-top: 8px;
     gap: 30px;
   }
 
-  /* -----------------FOOTER ADRESS------------------ */
+
   .footer-adress {
     margin-bottom: 35px;
   }
 
-  /* ------------------footer number -------------- */
+  .footer-number-list {
+    gap: 17px;
+  }
 
   .footer-contacts-number {
     max-width: 350px;
     position: absolute;
-    top: 103px;
+    top: 92px;
     left: 396px;
     margin-bottom: 0;
 
