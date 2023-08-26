@@ -1,0 +1,66 @@
+.footer-container {
+  padding: 36px 16px 16px 16px;
+
+}
+
+.footer {
+  background-color: var(--dark-blue);
+}
+.footer-svg {
+  display: flex;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.footer-list-svg {
+  display: flex;
+  margin: 0;
+  padding-left: 0px;
+  gap: 16px;
+}
+
+.footer-logo {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+
+.footer-logo-icon {
+  fill: var(--white);
+
+}
+.footer-social-svg {
+  fill: var(--white);
+}
+.footer-menu-link {
+  color: var(--white);
+}
+.footer-adress-link {
+  color: var(--white);
+}
+.footer-number-list {
+  color: var(--white);
+}
+.footer-contacts-link {
+  color: var(--white);
+}
+.footer-privacy-polisy {
+  color: var(--white);
+  text-decoration: underline;
+}
+.footer-privacy {
+  opacity: 0.6;
+  color: var(--white);
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.18em;
+}
+.footer-hours{
+color: var(--white);
+  font-family: Roboto;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 0.19px;
+}
