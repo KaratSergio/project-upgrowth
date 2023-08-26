@@ -1,10 +1,8 @@
- 
-  
-  <section class="subscription">
-    <div class="wrap-container">
-     <div class="sub-forms">
-      <h2 class="sub-name-title">Newsletter</h2>
-      <p class="sub-name-text">Every week we will send you new designs and information about 
+<section class="subscription">
+  <div class="wrap-container">
+    <div class="sub-forms">
+      <h2 id="subscription" class="sub-name-title">Newsletter</h2>
+      <p class="sub-name-text">Every week we will send you new designs and information about <br>
         sales.</p>
       <form class="sub-form">
         <div class="sub-form-name">
@@ -15,21 +13,26 @@
           <input type="email" class="sub-input" name="user-email" id="user-email" placeholder="E-mail" />
         </div>
         <div class="sub-checkbox">
-          <input type="checkbox" id="user-privacy" value="true" name="user-privacy" class="sub-check" />
+          <input type="checkbox" id="user-privacy" value="true" name="user-privacy"
+            class="sub-check visually-hidden " />
           <label for="user-privacy" class="sub-label">
-
+            <span>
+              <svg class="chek-icon" width="15" height="15">
+                <use href="./img/icon.svg#icon-Property-1check"></use>
+              </svg>
+            </span>
             Agree to subscribe to the newsletter
           </label>
         </div>
-  
 
-      <button class="button" type="button">Send</button>
-    
-    </form>
-   </div>
-    <div class="sub-img">
-      <img src="../img/des-subscription-1x.jpg" alt="">
+        <button class="form-btn" type="submit">Sent</button>
+
+      </form>
     </div>
- </div> 
+    <div class="sub-img">
+      <img srcset="./img/des-subscription-1x.jpg 1x, ./img/des-subscription-2x.jpg 2x"
+        src="./img/des-subscription-1x.jpg" alt="">
+    </div>
+  </div>
 
-  </section>
+</section>
