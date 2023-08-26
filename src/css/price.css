@@ -23,6 +23,7 @@
   text-transform: uppercase;
 }
 
+.price-text::before,
 .price-text:hover {
   margin-left: 20px;
 }
