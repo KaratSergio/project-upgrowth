@@ -1,8 +1,8 @@
-<section class="subscription">
+<section class="subscription container" >
   <div class="wrap-container">
     <div class="sub-forms">
       <h2 id="subscription" class="sub-name-title">Newsletter</h2>
-      <p class="sub-name-text">Every week we will send you new designs and information about <br>
+      <p class="sub-name-text">Every week we will send you new designs and information about 
         sales.</p>
       <form class="sub-form">
         <div class="sub-form-name">
@@ -17,7 +17,7 @@
             class="sub-check visually-hidden " />
           <label for="user-privacy" class="sub-label">
             <span>
-              <svg class="chek-icon" width="15" height="15">
+              <svg class="chek-icon" width="13" height="13">
                 <use href="./img/icon.svg#icon-Property-1check"></use>
               </svg>
             </span>
@@ -30,9 +30,30 @@
       </form>
     </div>
     <div class="sub-img">
-      <img srcset="./img/des-subscription-1x.jpg 1x, ./img/des-subscription-2x.jpg 2x"
-        src="./img/des-subscription-1x.jpg" alt="">
+        <picture class="usb-img-picture">
+          <source
+            media="(max-width: 767px)"
+            srcset="
+            ./img/mob-subscription-1x.jpg  1x,
+            ./img/mob-subscription-1x.jpg  2x
+            "
+          />
+          <source
+            media="(max-width: 1439px)"
+            srcset="
+            ./img/tab-subscription-1x.jpg 1x,
+            ./img/tab-subscription-2x.jpg 2x
+            "
+          />
+          <img
+            class="subscription-img"
+            srcset="./img/des-subscription-1x.jpg 1x, ./img/des-subscription-2x.jpg 2x"
+            src="./img/des-subscription-1x.jpg"
+            alt="subscription form"
+          />
+        </picture>
     </div>
   </div>
-
 </section>
+
+ 
