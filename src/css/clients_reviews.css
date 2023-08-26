@@ -3,8 +3,7 @@
 
 .clients{
 
-    /* background: var(--accent-gray); */
-background: var(--dark-gray);
+    background: var(--accent-gray);
 
     display: flex;
     flex-direction: column;
