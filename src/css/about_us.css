@@ -1,30 +1,23 @@
-/* :root {
-  --dark-blue: #0a224a; --body font
-  --dark-gray: #7a7a7a;
-  --gray: #b6b6b6;
-  --light-gray: #d9d9d9;
-  --accent-gray: #f7faff;
-  --white: #ffffff;
-  --button-accent: #061835;
-} */
-
 .aboutus-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .aboutus-section.container {
+    padding: 0;
+  }
+}
 @media (min-width: 768px) {
   .aboutus-section {
-    margin-top: 100px;
+    padding-top: 100px;
   }
 }
 @media (min-width: 1440px) {
   .aboutus-section {
-    margin: 100px auto 0;
     flex-direction: row;
     gap: 24px;
-    max-width: 1320px;
   }
 }
 
@@ -38,11 +31,16 @@
   position: relative;
   gap: 30px;
 }
+@media (max-width: 767px) {
+  .aboutus-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
 @media (min-width: 768px) {
   .aboutus-container {
     margin-bottom: 30px;
     padding: 36px 64px;
-    max-width: 704px;
   }
 }
 @media (min-width: 1440px) {
