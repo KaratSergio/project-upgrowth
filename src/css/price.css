@@ -1,71 +1,53 @@
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 .price {
-    max-width: 1096px;
-    margin: 172px;
+  max-width: 343px;
+  margin: 0 auto;
+  padding-top: 64px;
 }
 
 .price-item {
-    border-bottom: 1px solid #0A224A;
+  border-bottom: 1px solid #0a224a;
 }
 
 .price-sold {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 27px;
-    padding: 30px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
 }
 
 .price-text {
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 45px;
-    text-transform: uppercase;
-    padding: 30px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  text-transform: uppercase;
 }
 
 .price-text:hover {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .price-list {
-    border-top: 1px solid #0A224A;
-    display: flex;
-    justify-content: space-between;
+  border-top: 1px solid #0a224a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
 }
 
+/* @media screen and (min-width: 375px) {
+} */
 
-
-@media screen and (min-width:375px) {
-    .price {
-        max-width: 343px;
-        margin: 0 auto;
-    }
+@media screen and (min-width: 768px) {
+  .price {
+    max-width: 704px;
+    padding-top: 100px;
+  }
 }
 
-@media screen and (min-width:768px) {
-    .price {
-        max-width: 704px;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (min-width:1440px) {
-    .price {
-        max-width: 1096px;
-        margin: 0 auto;
-    }
+@media screen and (min-width: 1440px) {
+  .price {
+    max-width: 1096px;
+    padding-top: 100px;
+  }
 }
