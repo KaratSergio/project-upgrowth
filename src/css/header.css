@@ -67,6 +67,7 @@
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  overflow: hidden;
 }
 
 .menu-container.is-open {
@@ -99,32 +100,33 @@
   .header-mob-menu-list {
     display: none;
   }
-    .button-menu-toggle {
-      display: flex;
-    }
+
+  .button-menu-toggle {
+    display: flex;
+  }
 
 }
 
 @media screen and (min-width: 1440px) {
-}
-
   .button-menu-toggle {
     display: none;
-  }
-    .header-mob-menu-list {
-      display: flex;
-    }
-
-  .header-mob-manu-link {
-    font-family: "Roboto";
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
   }
 
   .header-mob-menu-list {
     display: flex;
-    margin-left: auto;
-    gap: 30px;
   }
+}
+
+.header-mob-manu-link {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.header-mob-menu-list {
+  display: flex;
+  margin-left: auto;
+  gap: 30px;
+}
