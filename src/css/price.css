@@ -1,13 +1,4 @@
-.price {
-    max-width: 343px;
-    margin: 0 auto;
-    padding-top: 64px;
-  }
-  
-  .price-item {
-    border-bottom: 1px solid #0a224a;
-  }
-  
+
   .price-sold {
     font-size: 18px;
     font-style: normal;
@@ -52,3 +43,5 @@
       padding-top: 100px;
     }
   }
+
+
