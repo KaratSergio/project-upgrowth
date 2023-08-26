@@ -36,50 +36,55 @@
 
 .footer-menu-link {
   color: var(--white);
-  font-family: Roboto;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
 }
 
 .footer-adress-link {
   color: var(--white);
-  font-family: Roboto;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.01em;
 }
 
 .footer-contacts-link {
+  text-decoration: none;
   color: var(--white);
-  font-family: Roboto;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.01em;
 }
 
 .footer-privacy-polisy {
+  opacity: 0.6;
   color: var(--white);
-  text-decoration: underline;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.07em;
+  text-decoration-line: underline;
 }
 
 .footer-privacy {
   opacity: 0.6;
-  color: var(--white);
+color: var(--white);
   text-align: center;
-  font-family: "Roboto";
+  font-family: Roboto;
   font-size: 12px;
+  font-style: normal;
   font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: 0.18em;
+  line-height: 14px;
+  /* 116.667% */
+  letter-spacing: 1.188px;
 }
 
 .footer-hours {
   color: var(--white);
-  font-family: Roboto;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 400;
-  letter-spacing: 0.19px;
+  letter-spacing: 0.01em;
   margin-top: 8px;
 }
 
@@ -98,6 +103,9 @@
 .footer-contacts-number {
   margin-bottom: 64px;
 }
+.footer-number-item-link{
+padding-top: 8px;
+}
 
 @media screen and (min-width:768px) {
   .footer-container {
@@ -106,6 +114,9 @@
     margin: 0 auto;
     position: relative;
   }
+    .footer-menu-link{
+      font-size: 16px;
+    }
 
   .footer-logo-icon {
     width: 127px;
@@ -116,10 +127,6 @@
     margin-bottom: 20px;
   }
 
-  .footer-item-svg {
-    height: 40px;
-    width: 40px;
-  }
 
   .footer-social-svg {
     width: 40px;
@@ -164,30 +171,24 @@
     flex-direction: column;
     gap: 24px;
   }
-  .wrap-footer-number-list{
-  margin-bottom: 24px;
+
+  .wrap-footer-number-list {
+    margin-bottom: 24px;
   }
-  .footer-number-item {
-    font-family: "Roboto";
-    font-size: 19px;
-    letter-spacing: 0.01em;
-  }
+
+
 
   .footer-contacts-number {
     margin-bottom: 64px;
   }
 
-  .footer-privacy {
-    opacity: 0.6;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.08em;
-  }
+
 
   .footer-hours {
     margin-top: 24px;
   }
 }
+
 @media screen and (min-width:1440px) {
   .footer-container {
     max-width: 1376px;
@@ -223,18 +224,19 @@
 
   /* ------------------footer number -------------- */
 
-.footer-contacts-number {
-  max-width: 350px;
-  position: absolute;
-  top: 103px;
-  left: 396px;
-  margin-bottom: 0;
+  .footer-contacts-number {
+    max-width: 350px;
+    position: absolute;
+    top: 103px;
+    left: 396px;
+    margin-bottom: 0;
 
-}
-.footer-contacts-number{
-display: flex;
-gap: 82px;
-margin-top: 18px;
-}
+  }
+
+  .footer-contacts-number {
+    display: flex;
+    gap: 82px;
+    margin-top: 18px;
+  }
 
 }
