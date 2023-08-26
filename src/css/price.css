@@ -37,6 +37,7 @@
     padding: 30px;
 }
 
+.price-text::before,
 .price-text:hover {
     margin-left: 20px;
 }
