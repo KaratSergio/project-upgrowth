@@ -1,3 +1,8 @@
+.price {
+  padding-top: 64px;
+
+}
+
 .price-item {
   display: flex;
   justify-content: space-between;
@@ -20,7 +25,7 @@
   content: '';
   top: 50%;
   opacity: 0;
-  transition-duration: 1000ms;
+  transition-duration: 250ms;
   transition-timing-function: ease-in;
 }
 
@@ -54,6 +59,10 @@
 }
 
 @media screen and (min-width:768px) {
+  .price {
+    padding-top: 100px;
+  }
+
   .current::after {
     width: 25px;
   }
@@ -73,6 +82,13 @@
 }
 
 @media screen and (min-width:1440px) {
+
+  .price-list {
+    max-width: 1096px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .current::after {
     width: 30px;
   }
