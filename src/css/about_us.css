@@ -13,7 +13,6 @@
   .aboutus-section {
     padding-top: 100px;
   }
-
 }
 @media (min-width: 1440px) {
   .aboutus-section {
@@ -140,8 +139,6 @@
   }
 }
 
-.aboutus-item {
-}
 @media (min-width: 768px) {
   .aboutus-item {
     width: calc((100% - 66px) / 3);
@@ -164,10 +161,4 @@
   .aboutus-text-parameter {
     margin-bottom: 23px;
   }
-}
-
-.aboutus-picture {
-}
-
-.about-us-img {
 }
