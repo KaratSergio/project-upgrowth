@@ -1,54 +1,83 @@
-.price {
-    max-width: 343px;
-    margin: 0 auto;
-    padding-top: 64px;
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid var(--dark-blue);
+  position: relative;
+}
+
+.price-item:last-child {
+  border-bottom: 1px solid var(--dark-blue);
+}
+
+.current::after {
+  width: 20px;
+  height: 2.5px;
+  background-color: var(--dark-blue);
+  display: block;
+  position: absolute;
+  content: '';
+  top: 50%;
+  opacity: 0;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-in;
+}
+
+.price-item:hover.current::after {
+
+  opacity: 1;
+}
+
+
+.price-title {
+
+  transform: translatex(0);
+  transition-property: transform;
+  transition-duration: 1000ms;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.price-text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  align-items: center;
+  display: flex;
+}
+
+.price-item:hover>.price-title {
+  transform: translatex(30px);
+}
+
+@media screen and (min-width:768px) {
+  .current::after {
+    width: 25px;
   }
 
-  .price-item {
-    border-bottom: 1px solid #0a224a;
-  }
-
-  .price-sold {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.4;
+  .price-title {
+    font-size: 32px;
+    line-height: 1.41;
   }
 
   .price-text {
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    text-transform: uppercase;
+    font-size: 18px;
   }
 
-  .price-text::before,
-  .price-text:hover {
-    margin-left: 20px;
+  .price-item:hover>.price-title {
+    transform: translatex(40px);
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .current::after {
+    width: 30px;
   }
 
-  .price-list {
-    border-top: 1px solid #0a224a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 0;
+  .price-item:hover>.price-title {
+    transform: translatex(50px);
   }
-
-  /* @media screen and (min-width: 375px) {
-  } */
-
-  @media screen and (min-width: 768px) {
-    .price {
-      max-width: 704px;
-      padding-top: 100px;
-    }
-  }
-
-  @media screen and (min-width: 1440px) {
-    .price {
-      max-width: 1096px;
-      padding-top: 100px;
-    }
-  }
+}
