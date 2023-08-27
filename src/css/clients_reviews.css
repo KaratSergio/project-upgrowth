@@ -3,8 +3,8 @@
 
 .clients{
 
-    /* background: var(--accent-gray); */
-background: var(--dark-gray);
+    background: var(--accent-gray);
+
 
     display: flex;
     flex-direction: column;
@@ -24,7 +24,6 @@ background: var(--dark-gray);
 .clients-title{
     color: var(--dark-blue);
 text-align: center;
-font-family: Roboto;
 font-size: 28px;
 font-weight: 400;
 line-height: 1.4; 
@@ -37,18 +36,17 @@ margin-bottom: 54px;
 
     display: flex;
     flex-wrap: wrap;
-   
-   /* margin-bottom: 24px; */
+    align-items: center;
 }
 
 .clients-subtitle-time{
     margin-left: 14px;
+
 }
 
 .clients-subtitle{
-     color: var(--dark-blue);
-    
-font-family: Roboto;
+color: var(--dark-blue);
+
 font-size: 18px;
 font-weight: 700;
 line-height: 1.8;
@@ -56,23 +54,16 @@ text-transform: uppercase;
 }
 
 .clients-time-text{
-     color: var(--dark-blue);
-    
-font-family: Roboto;
+     color: var(--dark-blue);   
 font-size: 14px;
-font-weight: 400;
 line-height: 1.29;
 }
 
 .clients-text{
      color: var(--dark-blue); 
-font-family: Roboto;
 font-size: 14px;
-font-weight: 400;
 line-height: 1.43;
-/* width: 296px;
-height: 110px;
-flex-shrink: 0; */
+
 }
 
 .clients-list
@@ -152,12 +143,6 @@ font-size: 15px;
     display: none;
 }
 
-/* .clients-item{
-    padding: 24px;
-} */
-
-
-
 
 }
 
@@ -176,7 +161,6 @@ font-size: 15px;
     margin: 0  auto 100px;}
 
     .client-flex { 
-     /* padding: 24px; */
 
 } 
 
@@ -205,9 +189,7 @@ font-size: 15px;
 }
 
 .clients-time-text{
-font-family: Roboto;
 font-size: 16px;
-font-weight: 400;
 line-height: 1.5;
 }
 
@@ -220,7 +202,6 @@ text-transform: uppercase;
 }
 
 .clients-subtitle{
-font-family: Roboto;
 font-size: 20px;
 font-weight: 700;
 line-height: 2.25;
@@ -228,13 +209,8 @@ text-transform: uppercase;
 }
 
 .clients-text{
-font-family: Roboto;
 font-size: 18px;
-font-weight: 400;
 line-height: 1.5;
-/* width: 296px;
-height: 192px; */
-/* width: 100%; */
 }
 
 .clients-item{
@@ -276,9 +252,7 @@ height: 192px; */
 }
 
 .clients-time-text{
-font-family: Roboto;
 font-size: 16px;
-font-weight: 400;
 line-height: 1.5;
 }
 
@@ -291,7 +265,6 @@ text-transform: uppercase;
 }
 
 .clients-subtitle{
-font-family: Roboto;
 font-size: 20px;
 font-weight: 700;
 line-height: 2.25;
@@ -299,12 +272,8 @@ text-transform: uppercase;
 }
 
 .clients-text{
-font-family: Roboto;
 font-size: 18px;
-font-weight: 400;
 line-height: 1.5;
-/* width: 360px;
-height: 161px; */
 }
 
 .clients-item{
@@ -314,9 +283,7 @@ padding: 32px;
 }
 
 .client-flex { 
-/* padding: 32px; */
 margin-bottom: 16px;
-
 
 
 } 
