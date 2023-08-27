@@ -6,6 +6,7 @@
   --accent-gray: #f7faff;
   --white: #ffffff;
   --button-accent: #061835;
+  --transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
