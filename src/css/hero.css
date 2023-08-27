@@ -41,6 +41,7 @@
     width: 224px;
     padding: 12px 65px;
     background-color: var(--dark-blue);
+    transition: background-color 250ms var(--transition);
 
 }
 
