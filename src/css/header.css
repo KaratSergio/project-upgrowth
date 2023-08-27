@@ -2,6 +2,7 @@
   background-color: var(--accent-gray);
 }
 
+
 .header-nav a {
   display: flex;
 }
@@ -56,22 +57,20 @@
   margin-top: 114px;
 }
 
+
+.is-hidden {
+  z-index: 10;
+  transform: translateX(100%);
+}
+
 .menu-container {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100%;
   width: 100%;
   height: 100%;
   background-color: var(--white);
-  z-index: 10;
-
-  transform: translateX(-100%);
-  transition: transform 250ms ease-in-out;
-  overflow: hidden;
-}
-
-.menu-container.is-open {
-  transform: translateX(0);
+  transition: transform 300ms ease-in-out;
 }
 
 .wrap-menu-toggle {
@@ -126,11 +125,7 @@
     display: none;
   }
 
-    .header-mob-menu-list {
-      display: flex;
-    }
+  .header-mob-menu-list {
+    display: flex;
+  }
 }
-
-
-
-

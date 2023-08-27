@@ -6,7 +6,7 @@
           <use href="./img/icon.svg#icon-logo"></use>
         </svg>
       </a>
-      <button type="button" class="button-menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <button type="button" class="button-menu-toggle" data-modal-open>
         <svg class="menu_toggle_icon" width="32" height="32">
           <use href="./img/icon.svg#icon-align-justify-2"></use>
         </svg>
@@ -29,39 +29,38 @@
             <a class="header-mob-manu-link link" href="#reviews">Reviews</a>
           </li>
           <li>
-            <a class="header-mob-manu-link link" href="#contacts">Contacts</a>
+            <a class="header-mob-manu-link link" href="#contacts">Contacts</a> 
           </li>
         </ul>
       </div>
     </nav>
   </div>
-  <div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="menu-container" data-modal>
     <div class="wrap-menu-toggle">
-      <button class="menu-toggle js-close-menu">
+      <button class="menu-toggle" data-modal-close>
         <svg class="menu_toggle_icon" width="32" height="32">
           <use href="./img/icon.svg#icon-x"></use>
         </svg>
-      </button>
     </div>
     <div class="header-hidden-mob-menu-container">
       <ul class="header-hidden-mob-menu-list list">
-        <li class="header-hidden-mob-menu-list-item">
-          <a class="header-mob-manu-link link" href="#about">About us</a>
+        <li class="header-hidden-mob-menu-list-item ">
+            <a class="header-mob-manu-link show-modal-btn link" href="#about">About us</a>
         </li>
         <li>
-          <a class="header-mob-manu-link link" href="#products">Our products</a>
+          <a class="header-mob-manu-link show-modal-btn link" href="#products">Our products</a>
         </li>
         <li>
-          <a class="header-mob-manu-link link" href="#prices">Prices</a>
+          <a class="header-mob-manu-link show-modal-btn link" href="#prices">Prices</a>
         </li>
         <li>
-          <a class="header-mob-manu-link link" href="#bestsellers">Bestsellers</a>
+          <a class="header-mob-manu-link show-modal-btn link" href="#bestsellers">Bestsellers</a>
         </li>
         <li>
-          <a class="header-mob-manu-link link" href="#reviews">Reviews</a>
+          <a class="header-mob-manu-link show-modal-btn link" href="#reviews">Reviews</a>
         </li>
         <li>
-          <a class="header-mob-manu-link link" href="#contacts">Contacts</a>
+          <a class="header-mob-manu-link show-modal-btn link" href="#contacts">Contacts</a>
         </li>
       </ul>
     </div>
