@@ -2,7 +2,6 @@
   background-color: var(--accent-gray);
 }
 
-
 .header-nav a {
   display: flex;
 }
@@ -57,7 +56,6 @@
   margin-top: 114px;
 }
 
-
 .is-hidden {
   overflow: hidden;
   z-index: 10;
@@ -97,11 +95,22 @@
 }
 
 .header-mob-manu-link {
-  font-family: "Roboto";
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: transform 0.3s ease;
+}
+
+.header-mob-manu-link:hover,
+.header-mob-manu-link:focus {
+  font-weight: 600;
+  transform: scale(1.1);
+}
+
+.show-modal-btn:hover {
+  background-color: var(--accent-gray);
+  border-radius: 50%;
 }
 
 .header-mob-menu-list {
@@ -110,7 +119,7 @@
   gap: 30px;
 }
 
-@media screen and (min-width:320px) {
+@media screen and (min-width: 320px) {
   .header-mob-menu-list {
     display: none;
   }
@@ -119,7 +128,6 @@
     display: flex;
   }
 }
-
 
 @media screen and (min-width: 1440px) {
   .button-menu-toggle {

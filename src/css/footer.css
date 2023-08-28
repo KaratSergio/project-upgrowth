@@ -6,10 +6,6 @@
   background-color: var(--dark-blue);
 }
 
-address {
-  font-style: normal;
-}
-
 .footer-svg {
   display: flex;
   align-items: center;
@@ -31,11 +27,15 @@ address {
 
 .footer-logo-icon {
   fill: var(--white);
-
 }
 
 .footer-social-svg {
   fill: var(--white);
+}
+
+.footer-social-svg:hover,
+.footer-social-svg:focus {
+  fill: var(--dark-gray);
 }
 
 .footer-menu-link {
@@ -43,6 +43,14 @@ address {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+  transition: transform 0.3s ease;
+}
+
+.footer-menu-link:hover,
+.footer-menu-link:focus {
+  color: var(--dark-gray);
+  font-weight: 600;
+  transform: scale(1.1);
 }
 
 .footer-adress-link {
@@ -50,6 +58,11 @@ address {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.01em;
+}
+
+.footer-adress-link:hover,
+.footer-adress-link:focus {
+  color:  var(--address-link);
 }
 
 .footer-contacts-link {
@@ -82,7 +95,6 @@ address {
   letter-spacing: 0.01em;
 }
 
-
 .footer-hours {
   color: var(--white);
   font-size: 16px;
@@ -111,7 +123,26 @@ address {
   padding-top: 8px;
 }
 
-@media screen and (min-width:768px) {
+.footer-number-item {
+  transition: background-color 0.3s ease;
+}
+
+.footer-number-item:hover,
+.footer-number-item:focus {
+  animation: bounce 0.8s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02); /* Анімація масштабування */
+  }
+}
+
+@media screen and (min-width: 768px) {
   .footer-container {
     max-width: 704px;
     padding: 36px 0px;
@@ -169,7 +200,6 @@ address {
     margin-bottom: 0;
   }
 
-
   .footer-adress {
     margin-bottom: 64px;
   }
@@ -178,11 +208,8 @@ address {
     gap: 24px;
   }
 
-
-
   .hiddan-mail {
     display: flex;
-
   }
 
   .footer-number-list {
@@ -195,20 +222,16 @@ address {
     margin-bottom: 24px;
   }
 
-
-
   .footer-contacts-number {
     margin-bottom: 64px;
   }
-
-
 
   .footer-hours {
     margin-top: 24px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width: 1440px) {
   .footer-container {
     max-width: 1376px;
     margin: 0 auto;
@@ -251,7 +274,6 @@ address {
     gap: 30px;
   }
 
-
   .footer-adress {
     margin-bottom: 35px;
   }
@@ -266,7 +288,6 @@ address {
     top: 92px;
     left: 396px;
     margin-bottom: 0;
-
   }
 
   .footer-contacts-number {
@@ -274,5 +295,4 @@ address {
     gap: 82px;
     margin-top: 18px;
   }
-
 }
