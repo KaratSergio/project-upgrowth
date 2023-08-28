@@ -218,7 +218,7 @@
     color: var(--white);
     background-color: var(--dark-blue);
     border: none;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms var(--transition);
     margin-top: 33px;
     justify-content: center;
     align-items: center;
