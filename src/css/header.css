@@ -1,5 +1,8 @@
 .header {
   background-color: var(--accent-gray);
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .header-nav a {
@@ -156,4 +159,9 @@
   .header-mob-menu-list {
     display: flex;
   }
+  
+  .header {
+    position: static;
+  }
+
 }
