@@ -159,9 +159,8 @@
   .header-mob-menu-list {
     display: flex;
   }
-  
+
   .header {
     position: static;
   }
-
 }
