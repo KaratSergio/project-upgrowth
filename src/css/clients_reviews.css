@@ -61,15 +61,21 @@
   display: flex;
   flex-direction: row;
 }
+
 .clients-item {
   border-radius: 8px;
   background: var(--white);
+}
+
+#reviews {
+  scroll-margin-top: 88px;
 }
 
 @media screen and (max-width: 320px) {
   .clients-title {
     font-size: 22px;
   }
+
   .clients-text {
     max-width: 250px;
   }
@@ -109,6 +115,7 @@
     display: none;
   }
 }
+
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .clients-item.des {
     display: none;
@@ -171,6 +178,7 @@
   .clients {
     flex-direction: row;
   }
+
   .clients-all {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -220,5 +228,9 @@
 
   .client-flex {
     margin-bottom: 16px;
+  }
+
+  #reviews {
+    scroll-margin-top: 96px;
   }
 }
