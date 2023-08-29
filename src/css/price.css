@@ -3,6 +3,7 @@
 
 }
 
+
 .price-item {
   display: flex;
   justify-content: space-between;
@@ -58,6 +59,10 @@
   transform: translatex(30px);
 }
 
+#price {
+  scroll-margin-top: 88px;
+}
+
 @media screen and (min-width:768px) {
   .price {
     padding-top: 100px;
@@ -79,6 +84,10 @@
 
   .price-item:hover>.price-title {
     transform: translatex(40px);
+  }
+
+  #price {
+    scroll-margin-top: 96px;
   }
 }
 
