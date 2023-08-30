@@ -8,6 +8,7 @@
   --button-accent: #061835;
   --address-link: blue;
   --transition: cubic-bezier(0.4, 0, 0.2, 1);
+  --color-error: #E74A3B;
 }
 
 body {

@@ -39,6 +39,28 @@
   line-height: 1.5;
 }
 
+.sub-form {
+  position: relative;
+}
+
+.sub-icon-error {
+  position: absolute;
+  right: 0;
+  margin: 13px 12px 14px auto;
+  transition: fill 250ms var(--transition);
+  fill: transparent;
+}
+
+.sub-input:focus:invalid + .sub-icon-error {
+  fill: var(--color-error);
+}
+
+.sub-input:focus:invalid {
+  border: 2px solid var(--color-error);
+  outline: none;
+  transition: border-color 250ms var(--transition);
+}
+
 .sub-input:hover,
 .sub-input:focus {
   border: 1px solid var(--button-accent);
@@ -66,7 +88,7 @@
   transition-duration: 300ms;
 }
 
-.sub-check:checked+.sub-label span {
+.sub-check:checked + .sub-label span {
   background-color: var(--dark-blue);
   border: none;
   fill: var(--white);
@@ -215,7 +237,7 @@
     transition-duration: 300ms;
   }
 
-  .sub-check:checked+.sub-label span {
+  .sub-check:checked + .sub-label span {
     background-color: var(--dark-blue);
     border: none;
     fill: var(--white);

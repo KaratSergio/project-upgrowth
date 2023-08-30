@@ -1,20 +1,51 @@
-<section class="subscription container" >
- <div class="wrap-container"> 
-  <div class="sub-forms">
+<section class="subscription container">
+  <div class="wrap-container">
+    <div class="sub-forms">
       <h2 id="subscription" class="sub-name-title">Newsletter</h2>
-      <p class="sub-name-text">Every week we will send you new designs and information about 
-        sales.</p>
-      <form class="sub-form">
+      <p class="sub-name-text">
+        Every week we will send you new designs and information about sales.
+      </p>
+      <form class="sub-form" action="submit.php" method="post">
         <div class="sub-form-name">
-          <input type="text" class="sub-input" name="user-name" id="user-name" placeholder="Name" minlength="2"
-            maxlength="16" />
+          <input
+            type="text"
+            class="sub-input"
+            name="user-name"
+            id="user-name"
+            placeholder="Name"
+            minlength="2"
+            maxlength="16"
+            required
+            pattern="[A-Za-z0-9_]{3,20}"
+            title="Використовуйте літери, цифри та підкреслення. Мінімум 3, максимум 20 символів."
+          />
+          <svg class="sub-icon-error" width="24" height="24">
+            <use href="./img/icon.svg#icon-error"></use>
+          </svg>
         </div>
-        <div class="sub-form-email">
-          <input type="email" class="sub-input" name="user-email" id="user-email" placeholder="E-mail" />
+        <div class="sub-form">
+          <input
+            type="email"
+            class="sub-input"
+            name="user-email"
+            id="user-email"
+            placeholder="E-mail"
+            required
+            minlength="2"
+            maxlength="16"
+          />
+          <svg class="sub-icon-error" width="24" height="24">
+            <use href="./img/icon.svg#icon-error"></use>
+          </svg>
         </div>
         <div class="sub-checkbox">
-          <input type="checkbox" id="user-privacy" value="true" name="user-privacy"
-            class="sub-check visually-hidden " />
+          <input
+            type="checkbox"
+            id="user-privacy"
+            value="true"
+            name="user-privacy"
+            class="sub-check visually-hidden"
+          />
           <label for="user-privacy" class="sub-label">
             <span>
               <svg class="chek-icon" width="13" height="13">
@@ -26,35 +57,35 @@
         </div>
 
         <button class="form-btn" type="submit">Sent</button>
-
       </form>
     </div>
     <div class="sub-img">
-        <picture class="usb-img-picture">
-          <source
-            media="(max-width: 767px)"
-            srcset="
-            ./img/mob-subscription-1x.jpg  1x,
-            ./img/mob-subscription-1x.jpg  2x
-            "
-          />
-          <source
-            media="(max-width: 1439px)"
-            srcset="
+      <picture class="usb-img-picture">
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/mob-subscription-1x.jpg 1x,
+            ./img/mob-subscription-1x.jpg 2x
+          "
+        />
+        <source
+          media="(max-width: 1439px)"
+          srcset="
             ./img/tab-subscription-1x.jpg 1x,
             ./img/tab-subscription-2x.jpg 2x
-            "
-          />
-          <img
-            class="subscription-img"
-            srcset="./img/des-subscription-1x.jpg 1x, ./img/des-subscription-2x.jpg 2x"
-            src="./img/des-subscription-1x.jpg"
-            alt="subscription form"
-            width="704"
-          />
-        </picture>
+          "
+        />
+        <img
+          class="subscription-img"
+          srcset="
+            ./img/des-subscription-1x.jpg 1x,
+            ./img/des-subscription-2x.jpg 2x
+          "
+          src="./img/des-subscription-1x.jpg"
+          alt="subscription form"
+          width="704"
+        />
+      </picture>
     </div>
-</div> 
+  </div>
 </section>
-
- 
